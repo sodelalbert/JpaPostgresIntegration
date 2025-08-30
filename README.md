@@ -21,7 +21,7 @@ to manage users.
 
 ## Dependencies (pom.xml)
 
-<span style="color: red;">**Add Sprin Boot JPA dependenciess to connect to Postgres Database**</span>
+<span style="color: red;">**Add Spring Boot JPA dependencies to connect to Postgres Database**</span>
 
 ```xml
 
@@ -149,7 +149,7 @@ public class UsersController {
 }
 ```
 
-## Initial Data (src/main/resources/data.sql)
+## Initial Data Ingestion (src/main/resources/data.sql)
 
 <span style="color: red;">**Spring Boot will automatiically ingest the data into the DB from `data.sql` places
 in `resources` folder?**</span>
@@ -188,7 +188,7 @@ VALUES (1, 'user1', 'user1@example.com'),
        (3, 'user3', 'user3@example.com')
 ON CONFLICT (id) DO NOTHING;
 ```
-
+xp
 ## Running with Docker Compose
 
 <span style="color: red;">Start PostgresSQL using Docker Compose:<span style="color: red;">
